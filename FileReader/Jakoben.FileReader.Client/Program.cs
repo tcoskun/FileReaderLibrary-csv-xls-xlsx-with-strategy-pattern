@@ -64,7 +64,7 @@ namespace Jakoben.FileReader.Test
             var xmlPath = GetPath(xmlName);
             xdoc.Save(xmlPath);
 
-            //convert xls excel file to XML
+            //convert xls excel file to JSON
             Console.WriteLine("Translating data into json format.");
 
             var jsonFormat = formatManager.FormatData(new JSONFormat(), xlsExcelFile);
